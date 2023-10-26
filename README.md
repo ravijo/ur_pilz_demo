@@ -10,17 +10,18 @@ Demonstration of Pilz Industrial Motion Planner in MoveIt with Universal Robots
 
 
 ## Dependencies
-* **ros-humble-moveit**: Install using the following command: 
+* [MoveIt 2](https://moveit.ros.org/install-moveit2/binary/): Install using the following command: 
     ```console
-    $ sudo apt-get install ros-humble-moveit
+    $ sudo apt install ros-${ROS_DISTRO}-moveit
     ```
-* **ros-humble-ur-robot-driver**: Install using the following command: 
+* [Universal Robots ROS2 Driver](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver): Install using the following commands: 
     ```console
-    $ sudo apt-get install ros-humble-ur-robot-driver
+    $ sudo apt install ros-${ROS_DISTRO}-ur-robot-driver
+    $ sudo apt install ros-${ROS_DISTRO}-ur-moveit-config
     ```
-* **ros-humble-ur-moveit-config**: Install using the following command: 
+* [MoveIt Visual Tools](https://github.com/ros-planning/moveit_visual_tools): Install using the following command: 
     ```console
-    $ sudo apt-get install ros-humble-ur-moveit-config
+    $ sudo apt install ros-${ROS_DISTRO}-moveit-visual-tools
     ```
 
 
@@ -45,20 +46,27 @@ Demonstration of Pilz Industrial Motion Planner in MoveIt with Universal Robots
 ## Note
 This package has been tested on the following environment configuration-
 
-| Name                        | Value                                  |
-| --------------------------- | -------------------------------------- |
-| ROS                         | Humble                                 |
-| ros-humble-ur-moveit        | 2.5.5-1                                |
-| ros-humble-ur-robot-driver  | 2.2.9-1                                |
-| ros-humble-ur-moveit-config | 2.2.9-1                                |
-| OS                          | Ubuntu 22.04.3 LTS (64-bit)            |
-| Kernel                      | Version 6.2.0-35-generic               |
-| GCC                         | Version 11.4.0                         |
-| Python                      | Version 3.10.12                        |
-| RAM                         | 8 GB                                   |
-| Processor                   | Intel® Core™ i7-7700 CPU @ 3.60GHz × 8 |
+| Name                         | Value                                  |
+| ---------------------------- | -------------------------------------- |
+| ROS                          | Humble                                 |
+| MoveIt 2                     | 2.5.5-1                                |
+| Universal Robots ROS2 Driver | 2.2.9-1                                |
+| MoveIt Visual Tools          | 4.1.0-1                                |
+| OS                           | Ubuntu 22.04.3 LTS (64-bit)            |
+| Kernel                       | Version 6.2.0-35-generic               |
+| GCC                          | Version 11.4.0                         |
+| Python                       | Version 3.10.12                        |
+| RAM                          | 8 GB                                   |
+| Processor                    | Intel® Core™ i7-7700 CPU @ 3.60GHz × 8 |
 
 
 ## Issues (or Error Reporting) 
 Please check [here](https://github.com/ravijo/ur_pilz_demo/issues) and create issues accordingly.
 
+
+## References
+* [MoveIt Resources](https://github.com/ros-planning/moveit_resources)
+* [Universal Robots ROS2 Description](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description)
+* [Universal Robots ROS2 Driver](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver)
+
+  
