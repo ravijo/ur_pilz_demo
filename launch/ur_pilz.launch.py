@@ -127,11 +127,15 @@ def launch_setup(context, *args, **kwargs):
 
     # Planning Configuration
     pilz_planning_pipeline_config = {
+        "planning_pipelines": ["pilz_industrial_motion_planner"],
+        "default_planning_pipeline": "pilz_industrial_motion_planner",
+        "pilz_industrial_motion_planner": {},
         "move_group": {},
         "robot_description_planning":{},
     }
     pilz_planning_yaml = load_yaml("ur_pilz_demo", "config/pilz_industrial_motion_planner_planning.yaml")
     pilz_planning_pipeline_config["move_group"].update(pilz_planning_yaml)
+    pilz_planning_pipeline_config["pilz_industrial_motion_planner"].update(pilz_planning_yaml) 
 
     pilz_cartesian_limits_yaml = load_yaml("ur_pilz_demo", "config/pilz_cartesian_limits.yaml")
     pilz_planning_pipeline_config["robot_description_planning"].update(pilz_cartesian_limits_yaml)
